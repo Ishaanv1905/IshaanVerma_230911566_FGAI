@@ -1,0 +1,105 @@
+{
+  "stories_in_file": 27630,
+  "stories_train": 10000,
+  "stories_val": 1500,
+  "stories_test": 1500,
+  "characters_file": 22493387,
+  "tokens_train": 1957575,
+  "tokens_val": 287433,
+  "tokens_test": 292039,
+  "unique_tokens_train": 7867,
+  "vocab_size_used": 5000,
+  "unk_rate_train": 0.0021465333384416943,
+  "unk_rate_val": 0.0034199274265654953,
+  "windows_train": 489388,
+  "windows_val": 71853,
+  "windows_test": 73004,
+  "top_15_tokens": [
+    [
+      ".",
+      161192
+    ],
+    [
+      "the",
+      98443
+    ],
+    [
+      ",",
+      87685
+    ],
+    [
+      "and",
+      73152
+    ],
+    [
+      "a",
+      56192
+    ],
+    [
+      "to",
+      54684
+    ],
+    [
+      "\"",
+      44737
+    ],
+    [
+      "was",
+      39017
+    ],
+    [
+      "<nl>",
+      33613
+    ],
+    [
+      "they",
+      31665
+    ],
+    [
+      "he",
+      30066
+    ],
+    [
+      "it",
+      24588
+    ],
+    [
+      "she",
+      21754
+    ],
+    [
+      "said",
+      15846
+    ],
+    [
+      "with",
+      15680
+    ]
+  ]
+}
+majority-class baseline top-1 on val: 0.0818
+[SimpleRNN] ep1 train 4.053 val 3.526 ppl 34.0 top1 0.323 top5 0.575 t=86s
+[SimpleRNN] ep2 train 3.563 val 3.384 ppl 29.5 top1 0.340 top5 0.597 t=173s
+[SimpleRNN] ep3 train 3.378 val 3.287 ppl 26.8 top1 0.354 top5 0.611 t=259s
+[SimpleRNN] ep4 train 3.319 val 3.260 ppl 26.1 top1 0.359 top5 0.615 t=343s
+[SimpleRNN] ep5 train 3.242 val 3.222 ppl 25.1 top1 0.362 top5 0.620 t=428s
+[SimpleRNN] ep6 train 3.214 val 3.214 ppl 24.9 top1 0.364 top5 0.621 t=514s
+[BiRNN] ep1 train 4.005 val 3.511 ppl 33.5 top1 0.329 top5 0.579 t=142s
+[BiRNN] ep2 train 3.542 val 3.391 ppl 29.7 top1 0.345 top5 0.597 t=285s
+[BiRNN] ep3 train 3.319 val 3.271 ppl 26.3 top1 0.357 top5 0.613 t=426s
+[BiRNN] ep4 train 3.251 val 3.251 ppl 25.8 top1 0.361 top5 0.618 t=569s
+[BiRNN] ep5 train 3.153 val 3.202 ppl 24.6 top1 0.367 top5 0.624 t=713s
+[BiRNN] ep6 train 3.123 val 3.194 ppl 24.4 top1 0.368 top5 0.626 t=865s
+[LSTM] ep1 train 4.104 val 3.479 ppl 32.4 top1 0.334 top5 0.582 t=159s
+[LSTM] ep2 train 3.423 val 3.240 ppl 25.5 top1 0.365 top5 0.615 t=322s
+[LSTM] ep3 train 3.213 val 3.153 ppl 23.4 top1 0.378 top5 0.629 t=483s
+[LSTM] ep4 train 3.130 val 3.106 ppl 22.3 top1 0.386 top5 0.637 t=651s
+[LSTM] ep5 train 3.056 val 3.080 ppl 21.8 top1 0.391 top5 0.641 t=818s
+[LSTM] ep6 train 3.021 val 3.065 ppl 21.4 top1 0.393 top5 0.644 t=976s
+[GRU] ep1 train 3.918 val 3.282 ppl 26.6 top1 0.368 top5 0.615 t=163s
+[GRU] ep2 train 3.285 val 3.097 ppl 22.1 top1 0.388 top5 0.641 t=321s
+[GRU] ep3 train 3.068 val 3.006 ppl 20.2 top1 0.401 top5 0.654 t=484s
+[GRU] ep4 train 2.992 val 2.976 ppl 19.6 top1 0.404 top5 0.658 t=642s
+[GRU] ep5 train 2.907 val 2.943 ppl 19.0 top1 0.410 top5 0.663 t=801s
+[GRU] ep6 train 2.877 val 2.933 ppl 18.8 top1 0.410 top5 0.665 t=963s
+DONE

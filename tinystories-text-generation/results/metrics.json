@@ -1,0 +1,157 @@
+{
+  "dataset": {
+    "stories_in_file": 27630,
+    "stories_train": 10000,
+    "stories_val": 1500,
+    "stories_test": 1500,
+    "characters_file": 22493387,
+    "tokens_train": 1957575,
+    "tokens_val": 287433,
+    "tokens_test": 292039,
+    "unique_tokens_train": 7867,
+    "vocab_size_used": 5000,
+    "unk_rate_train": 0.0021465333384416943,
+    "unk_rate_val": 0.0034199274265654953,
+    "windows_train": 489388,
+    "windows_val": 71853,
+    "windows_test": 73004,
+    "top_15_tokens": [
+      [
+        ".",
+        161192
+      ],
+      [
+        "the",
+        98443
+      ],
+      [
+        ",",
+        87685
+      ],
+      [
+        "and",
+        73152
+      ],
+      [
+        "a",
+        56192
+      ],
+      [
+        "to",
+        54684
+      ],
+      [
+        "\"",
+        44737
+      ],
+      [
+        "was",
+        39017
+      ],
+      [
+        "<nl>",
+        33613
+      ],
+      [
+        "they",
+        31665
+      ],
+      [
+        "he",
+        30066
+      ],
+      [
+        "it",
+        24588
+      ],
+      [
+        "she",
+        21754
+      ],
+      [
+        "said",
+        15846
+      ],
+      [
+        "with",
+        15680
+      ]
+    ],
+    "majority_baseline_top1_val": 0.08175023645162582
+  },
+  "config": {
+    "data": "data/input.txt",
+    "out": "results",
+    "train_stories": 10000,
+    "val_stories": 1500,
+    "test_stories": 1500,
+    "stride": 4,
+    "seq_len": 24,
+    "vocab_size": 5000,
+    "embed_dim": 100,
+    "hidden": 128,
+    "epochs": 6,
+    "batch": 256,
+    "lr": 0.002,
+    "gen_words": 60,
+    "seed": 42
+  },
+  "results": {
+    "SimpleRNN": {
+      "params": 1174440,
+      "train_time_s": 513.9698112010956,
+      "time_per_epoch_s": 85.6616352001826,
+      "best_epoch": 6,
+      "val_loss": 3.2142832905770398,
+      "val_ppl": 24.885449881728935,
+      "val_top1": 0.36384006234951916,
+      "val_top5": 0.6211570846032872,
+      "test_loss": 3.235110522792683,
+      "test_ppl": 25.409179917188077,
+      "test_top1": 0.3608569393457893,
+      "test_top5": 0.6183359815900499
+    },
+    "BiRNN": {
+      "params": 1843880,
+      "train_time_s": 864.9612402915955,
+      "time_per_epoch_s": 144.1602067152659,
+      "best_epoch": 6,
+      "val_loss": 3.1938680692576664,
+      "val_ppl": 24.38255869834592,
+      "val_top1": 0.3682379302186408,
+      "val_top5": 0.625513200562259,
+      "test_loss": 3.214174379839204,
+      "test_ppl": 24.882739736605572,
+      "test_top1": 0.3663360911730864,
+      "test_top5": 0.6225960221357734
+    },
+    "LSTM": {
+      "params": 1262760,
+      "train_time_s": 975.8101782798767,
+      "time_per_epoch_s": 162.63502971331278,
+      "best_epoch": 6,
+      "val_loss": 3.0652549940829714,
+      "val_ppl": 21.439928345074875,
+      "val_top1": 0.39260712844279294,
+      "val_top5": 0.6442737255229427,
+      "test_loss": 3.078466722967984,
+      "test_ppl": 21.725066300815243,
+      "test_top1": 0.3911840447098789,
+      "test_top5": 0.6421155005205195
+    },
+    "GRU": {
+      "params": 1233320,
+      "train_time_s": 962.8694312572479,
+      "time_per_epoch_s": 160.47823854287466,
+      "best_epoch": 6,
+      "val_loss": 2.9329167119250847,
+      "val_ppl": 18.782333337304244,
+      "val_top1": 0.4097254116042476,
+      "val_top5": 0.6650244248674377,
+      "test_loss": 2.956768393510009,
+      "test_ppl": 19.235708963341267,
+      "test_top1": 0.40785436414443044,
+      "test_top5": 0.6613336255547642
+    }
+  }
+}
